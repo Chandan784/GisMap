@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         // Initialize the map
-        var map = L.map('map').setView([20.2961, 85.8245], 10);
+        var map = L.map('map').setView([20.2961, 85.8245], 12);
 
         // Add a tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -18237,7 +18237,7 @@
             } else if (category === 'office') {
                 iconUrl = 'https://cdn-icons-png.flaticon.com/128/17255/17255661.png';
             }
-            var icon = L.icon({ iconUrl: iconUrl, iconSize: [20, 20] });
+            var icon = L.icon({ iconUrl: iconUrl, iconSize: [40, 40] });
             var marker = L.marker(latlng, { icon: icon });
             var popupContent = "<b>" + feature.properties.name + "</b><br>" +
                 feature.properties.address + "<br>" +
